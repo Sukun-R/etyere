@@ -1,0 +1,67 @@
+#typed{
+    opacity: 0.5;
+}
+#now{
+    text-decoration: underline;
+}
+.now_miss{
+    text-decoration: underline;
+    color: #FF0C50;
+}
+
+#inputtype_selection {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* 間隔調整 */
+}
+
+.inputtype_selection_text {
+    cursor: pointer;
+}
+
+#mode_selection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px; /* 間隔調整 */
+}
+
+#mode_selection div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-basis: 100%;
+}
+
+#ety_words {
+    height: 21.33px;
+}
+
+.mode_selection_text {
+    cursor: pointer;
+}
+
+#spelling_table {
+    display: flex;
+    flex-wrap: wrap; /* 折り返しを許可 */
+    gap: 10px; /* 間隔を空ける */
+    width: 40%;
+}
+
+#spelling_table label{
+    display: flex;
+    align-items: center;
+    gap: 10px; /* 間隔調整 */
+}
+
+.hidden {
+    display: none !important;
+}
+
+.visible {
+    display: block;
+}
+
+details {
+    cursor: pointer;
+}
