@@ -22,7 +22,7 @@ async function sendSentencesData(str) {
 
 function createTokenizer() {
   return new Promise((resolve, reject) => {
-    kuromoji.builder({ dicPath: "./dict/" }).build((err, tokenizer) => {
+    kuromoji.builder({ dicPath: "../dict/" }).build((err, tokenizer) => {
       if (err) reject(err);
       else resolve(tokenizer);
     });
