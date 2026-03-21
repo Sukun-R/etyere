@@ -4785,6 +4785,7 @@ function set() {
       alert("ワードを選択してください");
     } else {
       times = Number(ele5.value)
+      basetimes = times
       if (org.checked) {
         sendSentencesData(d_S).then((result) => {
           sentences = result;
