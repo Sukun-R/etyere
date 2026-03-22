@@ -1,1 +1,0 @@
-const e=document.getElementById("file_selection");let t;e.addEventListener("change",e=>{try{const n=e.target.files[0],d=new FileReader;d.readAsText(n),d.addEventListener("load",()=>{t=d.result})}catch{}});
