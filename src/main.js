@@ -1229,7 +1229,7 @@ function signOptimization(arr, f) {
         } else if (sign_table[j] === "]") {
           tmp = tmp.replace(j, "}");
         } else if (sign_table[j] === "-") {
-          tmp = tmp.replace(j, "|");
+          tmp = tmp.replace(j, "\\");
         } else if (sign_table[j] === " ") {
           tmp = tmp.replace(j, " ");
         } else {
