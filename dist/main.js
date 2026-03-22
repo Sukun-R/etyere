@@ -199,7 +199,7 @@ if(word.includes("[E]")){const wordNameStart=3;result.word=word.substr(wordNameS
 return result}
 async function wordsReset(){if(mode==="original"){words=sortWords(sentences,basetimes);words_for_display=wordsForDisplay(words)}
 if(mode==="etyping"){if(inputtype==="roma"){words=await generateEtyWordsData(sentences[0],sentences[1]);words_for_display=wordsForDisplay(words)}
-if(inputtype==="kana"){words=await generateEtyWordsData(sentences[0],sentences[1],!0);words=await generateEtyWordsData(sentences[0],sentences[1],!1)}}}
+if(inputtype==="kana"){words_for_display=await generateEtyWordsData(sentences[0],sentences[1],!1);words=Object.assign({},words_for_display);words.hiragana=signOptimization(words_for_display.hiragana,!0)}}}
 function sortSelectedWords(dic){const randomInt=createRandomInt(dic.kanji.length,dic.kanji.length)
 if(inputtype==='roma'){const result={kanji:[],hiragana:[],roma:[],}
 for(let i=0;i<dic.kanji.length;i++){result.kanji.push(dic.kanji[randomInt[i]])
