@@ -2375,7 +2375,7 @@ function set() {
   ele534.textContent = "zile";
   ele535.value = "8";
   ele535.textContent = "zixe";
-  ele536.value = "8";
+  ele536.value = "9";
   ele536.textContent = "zilye";
   ele537.value = "10";
   ele537.textContent = "zixye";
